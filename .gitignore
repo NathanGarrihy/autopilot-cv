@@ -1,0 +1,22 @@
+# Node modules (from frontend or backend)
+**/node_modules/
+
+# Environment files
+**/.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE configs
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build output
+**/dist/
+**/.next/
+**/.turbo/

@@ -1,0 +1,14 @@
+# Node output
+dist/
+node_modules/
+
+# Env
+.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE / OS
+.vscode/
+.DS_Store
