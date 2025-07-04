@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom layer overrides */
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3 {
+    @apply font-bold text-slate-800;
+  }
+}
+
+@layer components {
+  .input-field {
+    @apply w-full p-3 rounded-md border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+
+  .button-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition-all duration-200;
+  }
+
+  .card {
+    @apply bg-white p-6 rounded-xl shadow-md;
+  }
+}
+
+@layer utilities {
+  .centered {
+    @apply flex items-center justify-center;
+  }
+
+  .form-container {
+    @apply max-w-2xl w-full mx-auto p-6 bg-white rounded-lg shadow-lg;
+  }
+
+  .label {
+    @apply block text-sm font-semibold text-slate-700 mb-1;
+  }
+}
